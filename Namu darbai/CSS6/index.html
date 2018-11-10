@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    </head>
+    <body>
+      <form class="" action="index.php" method="post">
+      <!--informacija  -->
+        <fieldset>
+        <legend><h4>Jūsų informacija</h4></legend>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">Vardas, pavardė</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </fieldset>
+      <!--Klausimai-->
+      <fieldset>
+      <legend><h4>Klausimai</h4></legend>
+      <!--pirmas klausimas-->
+        <p>Kaip sužinojote apie mus?</p>
+          <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Pasirinkite</option>
+                <option value="1">Draugai</option>
+                <option value="2">Facebook</option>
+                <option value="3">Google</option>
+                <option value="4">Kita</option>
+            </select>
+          </div><br>
+          <!--Antras klausimas-->
+          <p>Ar apsilankysite vėl?</p>
+          <label>
+           <input name="apsilankymas" type="radio" checked />
+           <span>Taip</span>
+          </label>
+          <label>
+            <input name="apsilankymas" type="radio" />
+            <span>Ne</span>
+          </label>
+          <label>
+            <input class="with-gap" name="apsilankymas" type="radio"  />
+            <span>Galbūt</span>
+          </label>
+       <!--Trečias klausimas-->
+        <p>Ką manote apie kursą?</p>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Rašykite ką galvojate</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--Ketvirtas klausimas-->
+        <p>Pažymėkite programavimo žymėjimo kalbas su kuriomis esate susipažinę:</p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>C#</span>
+              </label>
+            </p>
+            <p>
+            <label>
+              <input type="checkbox" />
+              <span>JAVA</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>PHP</span>
+            </label>
+          </p>
+          <label>
+            <input type="checkbox" />
+            <span>HTML</span>
+          </label>
+        </p>
+        <label>
+          <input type="checkbox" />
+          <span>CSS</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" />
+          <span>JavaScript</span>
+        </label>
+      </p>
+      <!--Siųsti-->
+      <button class="btn waves-effect waves-light" type="submit" name="action">Siųsti
+        <i class="material-icons right">send</i>
+      </button>
+      </fieldset>
+
+
+      <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('select').formSelect();
+      });
+
+
+      </script>
+    </body>
+  </html>
