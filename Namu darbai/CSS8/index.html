@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      input[type=text] {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      input[type=submit] {
+        width: 430px;
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      .forma {
+        width: 500px;
+        height: 260px;
+        padding: 20px;
+        background-color: #f9e289;
+      }
+
+      .dalyviai {
+        width: 500px;
+        padding: 20px;
+        margin-top: 5px;
+        background-color: #a5ed87;
+      }
+
+      .vardas{
+        width: 100%;
+      }
+
+      th {
+        background-color: #c986ed;
+      }
+
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      td.none {
+        border-style:none;
+      }
+
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.registracija {
+        border-style: hidden;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form class="" action="index.php" method="post">
+    <h1>Registracija į renginį</h1>
+    <div class="forma">
+      <h2>Registracijos forma</h2>
+      <p>Jeigu norite užsiregistruoti į renginį, užpildykite žemiau esančią formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius.</p>
+      <table class="registracija">
+          <tr>
+            <td class="none">Vardas</td>
+            <td class="none"><input type="text" name="name" value=""></td>
+          </tr>
+          <tr>
+            <td class="none">Pavardė</td>
+            <td class="none"><input type="text" name="name" value=""></td>
+          </tr>
+          <tr>
+            <td class="none">Elektroninis paštas</td>
+            <td class="none"><input type="text" name="name" value=""></td>
+          </tr>
+      </table>
+      <table class="registracija">
+          <tr>
+            <td class="none"><input type="submit" name="" value="Registruoti"></td>
+          </tr>
+      </table>
+    </div>
+
+
+    <div class="dalyviai">
+      <h2> Jau užsiregistravę dalyviai:</h2>
+      <table>
+        <tr>
+          <th class="vardas" colspan="2">Vardas</th>
+          <th>Pavardė</th>
+          <th>Elektroninis paštas</th>
+        </tr>
+        <tr>
+          <td colspan="2">Jonas</td>
+          <td>Jonaitis</td>
+          <td>jonaitis@gmail.com</td>
+        </tr>
+        <tr>
+          <td colspan="2">Petras</td>
+          <td>Petraitis</td>
+          <td>petraitis@gmail.com</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
