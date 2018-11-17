@@ -6,12 +6,18 @@
   </head>
   <body>
     <script type="text/javascript">
-      var name = "Jonas";
-      var surname = "Jonaitis";
-      var message = "ką tik prisijungė"
+      var name =  prompt("Įveskite savo vardą");
+      var surname = prompt("Įveskite savo pavardę");
+      var message = "ką tik prisijungė";
 
-      console.log(name +" "+ surname + " "+ message)
+      pranesimasPrisijungus(name,surname,message);
+
+      function pranesimasPrisijungus(name, surname){
+        alert(name +" "+ surname + " "+ message)
+    };
 
     </script>
   </body>
+
 </html>
+  </script>
