@@ -1,6 +1,6 @@
 function tikrinuAmziu(age) {
 
-    while(isNaN(age)){
+    if(isNaN(age)){
        alert("Įvedėte ne skaičių", "");
     return;
     }
