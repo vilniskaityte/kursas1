@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+
+    <!--KOPINTAS style -->
+      <style media="screen">
+
+        /* nav a,  li {
+          color: black !important;
+
+        } */
+        body{
+          font-family: arial;
+        }
+
+
+      .virsus {
+          height: 100px;
+        }
+
+      .logo {
+          margin-left:30px;
+          margin-top:10px;
+          display: flex;
+          height: 70px;
+        }
+
+      .biblioteka {
+          margin-left: 50px;
+          margin-top: -5px;
+          display: flex;
+      }
+
+      .nav-color{
+          background-color:#cc493d ;
+      }
+
+      .box-left {
+          background: silver;
+          margin: 5px;
+          padding: 5px;
+          height: 400px;
+      }
+
+
+      .parallax {
+          opacity: 0.8;
+          height: 650px;
+      }
+
+
+      .box-center-1 {
+          /* background: grey; */
+          margin: 5px;
+          padding: 5px;
+          margin-top: 10px;
+          /* height: 200px; */
+      }
+
+
+
+      .box-center-2 {
+          background: grey;
+          margin: 5px;
+          padding: 5px;
+          height: 200px;
+        }
+
+
+      .search-box{
+          width: 800px;
+          margin-top: 180px;
+          border-bottom: 20px rgba(255, 0, 0, 0.4) solid;
+          border-top: 20px rgba(255, 0, 0, 0.4) solid;
+          border-right: 50px rgba(255, 0, 0, 0.4) solid;
+          border-left:  50px rgba(255, 0, 0, 0.4) solid;
+
+        }
+
+      .material-icons {
+          color: black !important;
+          }
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+
+      .btn {
+          width: 180px;
+          height: 50px;
+          padding: 8px;
+          background-color: #a63b32 !Important;
+          box-shadow: 5px 10px #cdcfd3 ;
+        }
+
+
+      .btn:hover {
+          background-color: #cc493d !Important;
+        }
+
+      .el-katalogai{
+          margin-top:50px;
+        }
+
+
+
+        th, td, tr {
+            border: none;
+        }
+
+        .naujienos {
+            width: 150px;
+          }
+
+        .pavadinimas {
+            text-align: center;
+            color: #a63b32;
+            font-size: bold;
+
+        }
+
+
+
+
+          .footer{
+            background-color:#333331 ;
+            margin: 0 auto;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+          }
+
+          /* .footer-left{
+            padding-left: 200px;
+            padding-top: 50px; */
+
+          /* } */
+
+          /* .footer-right{
+            font-style: italic;
+            padding:50px; */
+
+          /* } */
+
+          /* .footer-center{
+            padding:50px;
+            padding-top: 50px; */
+
+/*
+          }
+
+          .footer-icons {
+            width: 50px;
+          }
+
+          .footer-icons2 {
+             width: 110px;
+           }
+
+ */
+        .naujileidiniai {
+            width: 100px;
+            height: 145px;
+
+            align: center;
+
+
+        }
+
+        .visible {
+            overflow-y: scroll;
+            height: 400px;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body background="images/3.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- VIRSUS LOGO-->
+<header class="virsus">
+<div class="logo">
+<img class="logo"src="images/lmta.png" alt="">
+ <div class="biblioteka">
+   <h3>BIBLIOTEKA</h3>
+ </div>
+</div>
+</header>
+
+
+       <!--MENU  -->
+<nav class="nav-color">
+<div class="container">
+<div class="nav-wrapper">
+  <a href="#!" class="brand-logo"></a>
+  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+   <ul class="right hide-on-med-and-down">
+     <li><a href="index.html">PAGRINDINIS</a></li>
+     <!-- <li><a href="#search">INFORMACIJOS IŠTEKLIAI</a></li> -->
+     <!-- <li><a href="#popular">PASLAUGOS</a></li> -->
+     <li><a href="duk.html">D.U.K</a></li>
+     <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+   </ul>
+</div>
+</div>
+</nav>
+
+         <!--MOB MENU  -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">PAGRINDINIS</a></li>
+    <!-- <li><a href="#search">INFORMACIJOS IŠTEKLIAI</a></li> -->
+    <!-- <li><a href="#popular">PASLAUGOS</a></li> -->
+    <li><a href="duk.html">D.U.K</a></li>
+    <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+ </ul>
+
+
+
+
+
+
+ <!--DESTYMAS-->
+<div class="row">
+<!--KAIRE PUS2E -->
+<div class="col s12 m8 l10">
+
+</div>
+
+
+
+
+
+
+
+     <!--DESINE PUSE MYGTUKAI -->
+      <div class="row">
+<div class="col s12 m4 l2">
+ <div class="box-right">
+   <table class="el-katalogai">
+     <tr>
+       <td><a class="waves-effect grey btn">EL. KATALOGAS</a></td>
+     </tr>
+     <tr>
+       <td><a class="waves-effect grey btn">ELABA</a></td>
+     </tr>
+     <tr>
+       <td><a class="waves-effect grey btn">VIRTUALI BIBLioteka</a></td>
+     </tr>
+     <tr>
+       <td><a class="waves-effect grey btn">PASIŪLYK LEIDINĮ</a></td>
+     </tr>
+     <tr>
+       <td><a class="waves-effect grey btn">KLAUSK bibliotekininko</a></td>
+     </tr>
+   </table>
+ </div>
+</div>
+</div>
+
+     <!--DESTYMO PABAIGA  -->
+
+     <div class="footer">
+       <div class="row">
+         <div class="col s12 m12 l12">
+           <div class="footer-left">
+           <h6>Lietuvos muzikos ir teatro akademijos biblioteka</h6>
+           <p>Muzikos fakulteto skaitykla:
+           Gedimino pr. 42, Vilnius.</p>
+           <p>Muzikos fakulteto biblioteka:
+           Vilniaus g. 6-2,Vilnius.</p>
+
+           <p>Teatro ir kino fakulteto biblioteka
+           T. Kosciuškos g. 10,Vilnius.</p>
+
+           <p>El. paštas: biblioteka@lmta.lt</p>
+
+          </div>
+        </div>
+        <!-- <div class="col s12 m12 l5">
+          <div class="footer-center">
+            <h6>DARBO LAIKAS:</h6>
+            <p>I–V 9.00-18.00 </p>
+            <p>VI–VII nedirba</p>
+            <p>Paskutinis mėnesio penktadienis – švaros diena. <br>
+              Skaitytojai neaptarnaujami.<br>
+              Prieššventinę dieną biblioteka dirba viena valanda trumpiau</p>
+
+</div>
+</div> -->
+
+       <!-- <div class="col s12 m12 l2">
+         <div class="footer-right">
+           <table>
+             <tr>
+               <td><img class="footer-icons" src="images/logo.fb.png" alt=""></td>
+               <td>Bibliotekos Facebook profilis</td>
+             </tr>
+             <tr>
+               <td><img class="footer-icons2" src="images/myq.png" alt=""></td>
+               <td>Spausdinimo, kopijavimo, skenavimo sistema</td>
+             </tr>
+           </table>
+</div> -->
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', function() {
+ var elems = document.querySelectorAll('.parallax');
+ var instances = M.Parallax.init(elems, options);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.parallax');
+var instances = M.Parallax.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function(){
+$('.parallax').parallax();
+});
+
+
+
+
+$(".naujileidiniai").hover(function(){
+   $(this).css({"width":160, "height":200 });
+ });
+
+
+   $(".naujileidiniai").mouseout(function(){
+     $(this).css({"width":100, "height":145});
+   });
+</script>
+</body>
+</html>
