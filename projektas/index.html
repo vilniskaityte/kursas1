@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+
+
+      <style media="screen">
+
+      body{
+        font-family:Georgia,sans-serif;
+      }
+
+      nav a, li {
+        color: black !important;
+      }
+
+
+      .virsus {
+          height: 100px;
+        }
+
+
+      .logo {
+          display: flex;
+          margin-left:30px;
+          margin-top:10px;
+          height: 70px;
+        }
+
+
+      .biblioteka {
+          display: flex;
+          margin-left: 50px;
+          margin-top: -5px;
+      }
+
+      .fb{
+        width: 40px;
+        margin-left: 400px;
+        margin-top:20px;
+
+      }
+
+      .nav-color{
+          background-color:#eeeeee ;
+
+      }
+
+      .parallax {
+          opacity: 0.8;
+
+      }
+
+        .box-center {
+          background: #eeeeee ;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          margin-top: 20px;
+          margin-bottom: 30px;
+      }
+
+
+
+        .btn {
+          width: 200px;
+          height: 50px;
+          padding: 8px;
+          background-color: #a63b32 !Important;
+
+        }
+
+      .btn:hover {
+          background-color: #cc493d !Important;
+        }
+
+
+        th, td, tr {
+            border: none;
+        }
+
+        .naujienos {
+            width: 150px;
+        }
+
+
+        .pavadinimas {
+            color: black;
+            text-align: center;
+
+        }
+
+
+        .footer{
+            background-color:#333331 ;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+
+          }
+
+
+        .naujileidiniai {
+            width: 100px;
+            height: 145px;
+            align: center;
+
+        }
+
+        .visible {
+            overflow-y: scroll;
+            height: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+
+
+        }
+
+        .box-center-1{
+            margin-top:30px;
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .katalogai{
+          display:flex;
+          justify-content: center;
+          align-content: center;
+          flex-wrap:wrap;
+          height: 100%;
+        }
+
+        .katalogai li{
+          display: block;
+          margin: 5px
+        }
+    </style>
+
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+    <body background="images/3.jpg">
+
+
+                              <!-- VIRSUS LOGO-->
+      <header class="virsus">
+        <div class="logo">
+          <a href="https://lmta.lt" target="_blank"><img class="logo"src="images/lmta.png" alt=""></a>
+            <div class="biblioteka">
+              <h3>BIBLIOTEKA</h3>
+              <div class="fb">
+                <a href="https://facebook.com/lmtabiblioteka" target="_blank"><img class="fb"src="images/dds.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+                                      <!--MENU  -->
+        <nav class="nav-color">
+          <div class="container">
+            <div class="nav-wrapper">
+               <a href="#!" class="brand-logo"></a>
+               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                   <li><a href="index.html">PAGRINDINIS</a></li>
+                   <li><a href="paslaugos.html">PASLAUGOS</a></li>
+                   <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+                   <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
+                </ul>
+             </div>
+           </div>
+         </nav>
+
+                                      <!--MOB MENU  -->
+         <ul class="sidenav" id="mobile-demo">
+           <li><a href="index.html">PAGRINDINIS</a></li>
+           <li><a href="paslaugos.html">PASLAUGOS</a></li>
+           <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+           <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
+        </ul>
+
+
+
+                                    <!--PARALLAX  -->
+        <div class="parallax-container">
+          <div class="parallax">
+            <img src="images/photo-15.jpg">
+          </div>
+
+            <div class="col s12 m12 l12">
+              <ul class="katalogai">
+                <li><a class="waves-effect grey btn" href="https://aleph.library.lt/F?func=find-b-0&local_base=lmt01opac" target="_blank">el. KATALOGAS</a></li>
+                <li><a class="waves-effect grey btn" href="https://elaba.lt" target="_blank">ELABA</a></li>
+                <li>  <a class="waves-effect grey btn" href="https://lmta.lvb.lt/primo-explore/search?vid=LMTA&lang=lt_LT&sortby=rank"  target="_blank">VIRTUALI BIBLIOTEKA</a></li>
+              </ul>
+
+
+            </div>
+        </div>
+
+
+
+
+                                    <!--DESTYMAS-->
+       <div class="row">
+
+                                      <!--CENTRAS NAUJIENO BIBLIOTEKOJE-->
+        <div class="col s12 m12 l12">
+             <div class="box-center">
+                <table>
+                   <tr>
+                     <th class="pavadinimas" colspan="2">TESTUOJAMA MEDICI.TV DUOMENŲ BAZĖ</th>
+                   </tr>
+                   <tr>
+                     <td><img class="naujienos"src="images/download.jpg" alt=""></td>
+                     <td><p> Iki š.m. gruodžio 5 d. akademijos bendruomenės nariams suteikta prieiga prie klasikinės muzikos video įrašų kolekcijos Medici.tv. Duomenų bazę sudaro koncertai, operų ir baletų įrašai, dokumentiniai filmai, menininkų portretai, edukacinės programos, taip pat yra galimybė stebėti koncertus realiuoju laiku.
+                      Jungiantis iš LMTA kompiuterių tinklo prisijungimo slaptažodis nereikalingas.
+                      Norint duomenų bazėmis naudotis iš kitų kompiuterių (namuose ir kt.), reikia prisijungti per nuotolinę prieigą EZPROXY</p></td>
+                   </tr>
+                   <tr>
+                     <th class="pavadinimas" colspan="2">PATOBULINTAS PRISIJUNGIMAS PRIE DAUGIAFUNKCIO KOPIJAVIMO ĮRENGINIO</th>
+                   </tr>
+                   <tr>
+                     <td> <img class="naujienos" src="images/ee.png" alt=""></td>
+                     <td><p>Įdiegtas prisijungimas prie įrenginio trečiuoju būdu – naudojant PIN kodą. Prisijungę prie print.lmta.lt, sistema sugeneruos šešių skaitmenų PIN kodą. Tad jungdamiesi prie įrenginio užteks įvesti tik Jums paskirtą kodą. (Šis prisijungimo būdas rekomenduotinas tiems, kurie neturi studento pažymėjimo) PIN kodo generavimo instrukcija.</p> </td>
+                   </tr>
+              </table>
+            </div>
+          </div>
+
+                                                    <!--CENTRAS1  -->
+
+          <h5 class="pavadinimas">NAUJI LEIDINIAI</h5>
+            <div class="box-center-1">
+               <img class="naujileidiniai"src="images/1.jpg" alt="">
+               <img class="naujileidiniai"src="images/2.png" alt="">
+               <img class="naujileidiniai"src="images/3.png" alt="">
+               <img class="naujileidiniai"src="images/4.png" alt="">
+               <img class="naujileidiniai"src="images/5.png" alt="">
+               <img class="naujileidiniai"src="images/6.jpg" alt="">
+               <img class="naujileidiniai"src="images/7.png" alt="">
+               <img class="naujileidiniai"src="images/8.png" alt="">
+
+             </div>
+
+           </div>
+        </div>
+
+                                                    <!--footeris-->
+
+          <div class="footer">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h6>Lietuvos muzikos ir teatro akademijos biblioteka</h6>
+                <p>Muzikos fakulteto skaitykla:
+                Gedimino pr. 42, Vilnius, tel.: (8-5) 262 8447 </p>
+                <p>Muzikos fakulteto biblioteka:
+                Vilniaus g. 6-2,Vilnius, tel.:(8-5) 262 2330</p>
+                <p>Teatro ir kino fakulteto biblioteka
+                T. Kosciuškos g. 10,Vilnius,tel.:(8-5) 261 3841 </p>
+                <p>El. paštas: biblioteka@lmta.lt</p>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript">
+
+          $(document).ready(function(){
+            $('.parallax').parallax();
+          });
+
+
+          $(".naujileidiniai").hover(function(){
+                $(this).css({"width":160, "height":210 });
+              });
+
+
+          $(".naujileidiniai").mouseout(function(){
+            $(this).css({"width":100, "height":145});
+          });
+
+
+     </script>
+   </body>
+ </html>

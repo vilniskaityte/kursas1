@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+
+
+    <style media="screen">
+
+      body{
+        font-family:Georgia,sans-serif;
+      }
+
+      nav a, li {
+        color: black !important;
+      }
+
+      .virsus {
+          height: 100px;
+        }
+
+      .logo {
+          margin-left:30px;
+          margin-top:10px;
+          display: flex;
+          height: 70px;
+        }
+
+      .fb{
+          width: 40px;
+          margin-left: 400px;
+          margin-top:20px;
+
+        }
+
+      .biblioteka {
+          margin-left: 50px;
+          margin-top: -5px;
+          display: flex;
+      }
+
+      .nav-color{
+          background-color:#eeeeee ;
+      }
+
+      .box-center {
+          background: #eeeeee ;
+          padding: 20px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          margin-top:20px;
+      }
+
+      .pavadinimas {
+        text-align: center;
+        margin-top:30px;
+      }
+
+
+      .footer{
+          background-color:#333331 ;
+          margin: 0 auto;
+          color: white;
+          text-align: center;
+        }
+
+
+    .btn{
+      width: 200px;
+      height: 50px;
+      padding: 8px;
+      background-color: #a63b32 !Important;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:30px;
+    }
+
+
+    </style>
+
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body background="images/3.jpg">
+
+
+                           <!-- VIRSUS LOGO-->
+     <header class="virsus">
+       <div class="logo">
+         <img class="logo"src="images/lmta.png" alt="">
+           <div class="biblioteka">
+             <h3>BIBLIOTEKA</h3>
+             <div class="fb">
+               <a href="https://facebook.com/lmtabiblioteka" target="_blank"><img class="fb"src="images/dds.png" alt=""></a>
+             </div>
+           </div>
+         </div>
+       </header>
+
+                                     <!--MENU  -->
+       <nav class="nav-color">
+         <div class="container">
+           <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+               <ul class="right hide-on-med-and-down">
+                  <li><a href="index.html">PAGRINDINIS</a></li>
+                  <li><a href="paslaugos.html">PASLAUGOS</a></li>
+                  <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+               </ul>
+            </div>
+          </div>
+        </nav>
+                            <!--MOB MENU  -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html">PAGRINDINIS</a></li>
+          <li><a href="paslaugos.html">PASLAUGOS</a></li>
+          <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+       </ul>
+                          <!--FORMA  -->
+       <h5 class="pavadinimas">LEIDINIŲ UŽSAKYMO FORMA</h5>
+       <div class="col s12 m12 l12">
+       <div class="box-center">
+         <form class="" action="index.php" method="post">
+               <fieldset>
+                 <legend class="info1"><h5>Informacija apie leidinį</h5></legend>
+                   <table>
+                     <tr>
+                       <td>1. Leidinio autorius:</td>
+                       <td><input type="text" name="autorius" value=""></td>
+                     </tr>
+                     <tr>
+                       <td>2. Leidinio antraštė:</td>
+                       <td><input type="text" name="antraštė" value=""></td>
+                     </tr>
+                     <tr>
+                       <td>3. ISBN, ISSN:</td>
+                       <td><input type="text" name="ISBN" value=""></td>
+                     </tr>
+                     <tr>
+                       <td>4. Leidinio išleidimo metai:</td>
+                       <td><input type="text" name="metai" value=""></td>
+                     </tr>
+                     <tr>
+                       <td>5. Egzemplorių skaičius:</td>
+                       <td><input type="text" name="skaičius" value=""></td>
+                     </tr>
+                   </table>
+                 </fieldset>
+
+                 <fieldset>
+                   <legend class="info2"><h5>Informacija apie jus</h5></legend>
+                     <table>
+                       <tr>
+                         <td>1. Jūsų vardas, pavardė:</td>
+                         <td><input type="text" name="vardas.pavardė" value=""></td>
+                       </tr>
+                       <tr>
+                         <td>2. Fakulteto pavadinimas. Pareigos:</td>
+                         <td><input type="text" name="fakuletas" value=""></td>
+                       </tr>
+                       <tr>
+                         <td>3. Jūsų el. paštas:</td>
+                         <td><input type="text" name="e.paštas" value=""></td>
+                       </tr>
+                       <tr>
+                         <td>4. Jūsų telefono nr:</td>
+                         <td><input type="text" name="tel." value=""></td>
+                       </tr>
+                     </table>
+
+                     <button class="btn" type="submit" name="action">Siųsti
+                     <i class="material-icons right">send</i>
+                     </button>
+               </fieldset>
+             </div>
+           </div>
+
+       <div class="footer">
+         <div class="row">
+           <div class="col s12 m12 l12">
+             <div class="footer">
+
+                 <h6>Lietuvos muzikos ir teatro akademijos biblioteka</h6>
+                 <p>Muzikos fakulteto skaitykla:
+                 Gedimino pr. 42, Vilnius, tel.: (8-5) 262 8447 </p>
+                 <p>Muzikos fakulteto biblioteka:
+                 Vilniaus g. 6-2,Vilnius, tel.:(8-5) 262 2330</p>
+                 <p>Teatro ir kino fakulteto biblioteka
+                 T. Kosciuškos g. 10,Vilnius,tel.:(8-5) 261 3841 </p>
+                 <p>El. paštas: biblioteka@lmta.lt</p>
+              </div>
+          </div>
+        </div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+  </body>
+</html>
