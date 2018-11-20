@@ -10,7 +10,7 @@
 
 
 
-      <style media="screen">
+    <style media="screen">
 
       body{
         font-family:Georgia,sans-serif;
@@ -38,18 +38,13 @@
           display: flex;
           margin-left: 50px;
           margin-top: -5px;
-
-      }
-      a {
-        color:black;
       }
 
-      .fb{
+      /* .fb{
         width: 40px;
         margin-left: 400px;
         margin-top:20px;
-
-      }
+      } */
 
       .nav-color{
           background-color:#eeeeee ;
@@ -57,7 +52,7 @@
       }
 
       .parallax {
-          opacity: 0.8;
+          opacity: 0.9;
 
       }
 
@@ -73,7 +68,7 @@
 
 
 
-      .btn {
+        .btn {
           width: 200px;
           height: 50px;
           padding: 8px;
@@ -107,7 +102,6 @@
             margin: 0 auto;
             color: white;
             text-align: center;
-
           }
 
 
@@ -115,19 +109,16 @@
             width: 100px;
             height: 145px;
             align: center;
-
         }
 
-        .visible {
+        /* .visible {
             overflow-y: scroll;
             height: 400px;
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
-
-
-        }
+        } */
 
         .box-center-1{
             margin-top:30px;
@@ -139,16 +130,31 @@
         }
 
         .katalogai{
-          display:flex;
-          justify-content: center;
-          align-content: center;
-          flex-wrap:wrap;
-          height: 100%;
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap:wrap;
+            margin-top:10%;
+            height: 100%;
         }
 
         .katalogai li{
-          display: block;
-          margin: 5px;
+            display: block;
+            margin: 5px
+        }
+
+        a{
+          color: black;
+        }
+
+
+        .sticky{
+          position: fixed;
+          width: 100%;
+          left: 0;
+          top: 0;
+          z-index: 100;
+          border-top: 0;
         }
     </style>
 
@@ -164,16 +170,16 @@
         <div class="logo">
           <a href="https://lmta.lt" target="_blank"><img class="logo"src="images/lmta.png" alt=""></a>
             <div class="biblioteka">
-              <a href="index.html" target="_blank"><h3>BIBLIOTEKA</h3></a>
-              <div class="fb">
+              <a href="index.html"><h3>BIBLIOTEKA</h3></a>
+              <!-- <div class="fb">
                 <a href="https://facebook.com/lmtabiblioteka" target="_blank"><img class="fb"src="images/dds.png" alt=""></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </header>
 
 
-                                      <!--MENU  -->
+                                      <!--MENU-->
         <nav class="nav-color">
           <div class="container">
             <div class="nav-wrapper">
@@ -189,31 +195,29 @@
            </div>
          </nav>
 
-                                      <!--MOB MENU  -->
-         <ul class="sidenav" id="mobile-demo">
-           <li><a href="index.html">PAGRINDINIS</a></li>
-           <li><a href="paslaugos.html">PASLAUGOS</a></li>
-           <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
-           <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
-        </ul>
+                                    <!--MOB MENU  -->
+       <ul class="sidenav" id="mobile-demo">
+         <li><a href="index.html">PAGRINDINIS</a></li>
+         <li><a href="paslaugos.html">PASLAUGOS</a></li>
+         <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+         <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
+      </ul>
 
 
 
-                                    <!--PARALLAX  -->
+                              <!--PARALLAX  -->
         <div class="parallax-container">
           <div class="parallax">
             <img src="images/photo-15.jpg">
           </div>
-
-            <div class="col s12 m12 l12">
-              <ul class="katalogai">
-                <li><a class="waves-effect grey btn" href="https://aleph.library.lt/F?func=find-b-0&local_base=lmt01opac" target="_blank">el. KATALOGAS</a></li>
-                <li><a class="waves-effect grey btn" href="https://elaba.lt" target="_blank">ELABA</a></li>
-                <li>  <a class="waves-effect grey btn" href="https://lmta.lvb.lt/primo-explore/search?vid=LMTA&lang=lt_LT&sortby=rank"  target="_blank">VIRTUALI BIBLIOTEKA</a></li>
-              </ul>
-
-
-            </div>
+                              <!--KATALOGAI  -->
+          <div class="col s12 m12 l12">
+            <ul class="katalogai">
+              <li><a class="waves-effect grey btn" href="https://aleph.library.lt/F?func=find-b-0&local_base=lmt01opac" target="_blank">el. KATALOGAS</a></li>
+              <li><a class="waves-effect grey btn" href="https://elaba.lt" target="_blank">ELABA</a></li>
+              <li>  <a class="waves-effect grey btn" href="https://lmta.lvb.lt/primo-explore/search?vid=LMTA&lang=lt_LT&sortby=rank"  target="_blank">VIRTUALI BIBLIOTEKA</a></li>
+            </ul>
+          </div>
         </div>
 
 
@@ -221,8 +225,7 @@
 
                                     <!--DESTYMAS-->
        <div class="row">
-
-                                      <!--CENTRAS NAUJIENO BIBLIOTEKOJE-->
+                                      <!--CENTRAS NAUJIENOS BIBLIOTEKOJE-->
         <div class="col s12 m12 l12">
              <div class="box-center">
                 <table>
@@ -246,7 +249,7 @@
             </div>
           </div>
 
-                                                    <!--CENTRAS1  -->
+                                          <!--CENTRAS1-->
 
           <h5 class="pavadinimas">NAUJI LEIDINIAI</h5>
             <div class="box-center-1">
@@ -258,13 +261,11 @@
                <img class="naujileidiniai"src="images/6.jpg" alt="">
                <img class="naujileidiniai"src="images/7.png" alt="">
                <img class="naujileidiniai"src="images/8.png" alt="">
-
              </div>
-
            </div>
         </div>
 
-                                                    <!--footeris-->
+                                        <!--footeris-->
 
           <div class="footer">
             <div class="row">
@@ -295,7 +296,7 @@
 
 
           $(".naujileidiniai").hover(function(){
-                $(this).css({"width":160, "height":210 });
+            $(this).css({"width":160, "height":210 });
               });
 
 
@@ -303,7 +304,32 @@
             $(this).css({"width":100, "height":145});
           });
 
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
 
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
+
+          $(document).ready(function() {
+            var stickyNavTop = $('.nav-color').offset().top;
+            var stickyNav = function(){
+              var scrollTop = $(window).scrollTop();
+            if (scrollTop > stickyNavTop) {
+              $('.nav-color').addClass('sticky');
+              }
+            else {
+              $('.nav-color').removeClass('sticky');
+              }
+            };
+
+              stickyNav();
+
+              $(window).scroll(function() {
+                stickyNav();
+              });
+            });
      </script>
    </body>
  </html>

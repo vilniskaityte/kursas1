@@ -16,11 +16,9 @@
         font-family:Georgia,sans-serif;
       }
 
-
       nav a, li {
         color: black !important;
       }
-
 
       .virsus {
           height: 100px;
@@ -33,12 +31,11 @@
           height: 70px;
         }
 
-      .fb{
+      /* .fb{
           width: 40px;
           margin-left: 400px;
           margin-top:20px;
-
-        }
+        } */
 
       .biblioteka {
           margin-left: 50px;
@@ -61,12 +58,12 @@
       }
 
       .pavadinimas {
-            text-align: center;
+          text-align: center;
         }
-        
-        a {
-          color:black;
-        }
+
+      a{
+        color: black;
+      }
 
       .footer{
           background-color:#333331 ;
@@ -88,11 +85,19 @@
           width: 100%;
       }
 
-
       #text {
           display: none;
         }
 
+
+      .sticky{
+          position: fixed;
+          width: 100%;
+          left: 0;
+          top: 0;
+          z-index: 100;
+          border-top: 0;
+        }
 
     </style>
 
@@ -100,50 +105,50 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    </head>
 
-   <body background="images/3.jpg">
+    <body background="images/3.jpg">
 
 
-                             <!-- VIRSUS LOGO-->
-     <header class="virsus">
-       <div class="logo">
-         <a href="https://lmta.lt" target="_blank"><img class="logo"src="images/lmta.png" alt=""></a>
-          <div class="biblioteka">
-             <a href="index.html" target="_blank"><h3>BIBLIOTEKA</h3></a>
-             <div class="fb">
-               <a href="https://facebook.com/lmtabiblioteka" target="_blank"><img class="fb"src="images/dds.png" alt=""></a>
-             </div>
-           </div>
+                       <!-- VIRSUS LOGO-->
+   <header class="virsus">
+     <div class="logo">
+       <img class="logo"src="images/lmta.png" alt="">
+         <div class="biblioteka">
+             <a href="index.html"><h3>BIBLIOTEKA</h3></a>
+           <!-- <div class="fb">
+             <a href="https://facebook.com/lmtabiblioteka" target="_blank"><img class="fb"src="images/dds.png" alt=""></a>
+           </div> -->
          </div>
-       </header>
+       </div>
+     </header>
 
-                                     <!--MENU  -->
-       <nav class="nav-color">
-         <div class="container">
-           <div class="nav-wrapper">
-              <a href="#!" class="brand-logo"></a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-               <ul class="right hide-on-med-and-down">
-                  <li><a href="index.html">PAGRINDINIS</a></li>
-                  <li><a href="paslaugos.html">PASLAUGOS</a></li>
-                  <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
-                  <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
-               </ul>
-            </div>
+                                   <!--MENU  -->
+     <nav class="nav-color">
+       <div class="container">
+         <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+             <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">PAGRINDINIS</a></li>
+                <li><a href="paslaugos.html">PASLAUGOS</a></li>
+                <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+                <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
+             </ul>
           </div>
-        </nav>
-                                     <!--MOB MENU  -->
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="index.html">PAGRINDINIS</a></li>
-          <li><a href="paslaugos.html">PASLAUGOS</a></li>
-          <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
-          <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
-       </ul>
+        </div>
+      </nav>
+                                   <!--MOB MENU  -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">PAGRINDINIS</a></li>
+        <li><a href="paslaugos.html">PASLAUGOS</a></li>
+        <li><a href="apie.html">APIE BIBLIOTEKĄ</a></li>
+        <li><a href="pasiulyk.html">PASIŪLYK LEIDINĮ</a></li>
+     </ul>
 
 
 
 
-               <!--DESTYMAS-->
-        <div class="row">
+                          <!--DESTYMAS-->
+      <div class="row">
 
           <div class="col s12 m12 l12">
             <div class="box-center">
@@ -172,30 +177,30 @@
               <p>– Biblioteka nuolatos rengia mokymus, konsultacijas, parodas.</p>
               <p>– Biblioteka dalyvauja projektuose, programose, įvairių organizacijų veikloje.</p></span>
 
-          <div class="btn-container">
+            <div class="btn-container">
             <button id="toggle">Skaityti daugiau</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-     <div class="footer">
-       <div class="row">
-         <div class="col s12 m12 l12">
-           <div class="footer">
-               <h6>Lietuvos muzikos ir teatro akademijos biblioteka</h6>
-               <p>Muzikos fakulteto skaitykla:
-               Gedimino pr. 42, Vilnius, tel.: (8-5) 262 8447 </p>
-               <p>Muzikos fakulteto biblioteka:
-               Vilniaus g. 6-2,Vilnius, tel.:(8-5) 262 2330</p>
-               <p>Teatro ir kino fakulteto biblioteka
-               T. Kosciuškos g. 10,Vilnius,tel.:(8-5) 261 3841 </p>
-               <p>El. paštas: biblioteka@lmta.lt</p>
-            </div>
+       <div class="footer">
+         <div class="row">
+           <div class="col s12 m12 l12">
+             <div class="footer">
+                 <h6>Lietuvos muzikos ir teatro akademijos biblioteka</h6>
+                 <p>Muzikos fakulteto skaitykla:
+                 Gedimino pr. 42, Vilnius, tel.: (8-5) 262 8447 </p>
+                 <p>Muzikos fakulteto biblioteka:
+                 Vilniaus g. 6-2,Vilnius, tel.:(8-5) 262 2330</p>
+                 <p>Teatro ir kino fakulteto biblioteka
+                 T. Kosciuškos g. 10,Vilnius,tel.:(8-5) 261 3841 </p>
+                 <p>El. paštas: biblioteka@lmta.lt</p>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
 
 
 
@@ -223,6 +228,35 @@
            }
          });
        });
+
+       $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
+
+          $(document).ready(function() {
+
+          var stickyNavTop = $('.nav-color').offset().top;
+
+
+          var stickyNav = function(){
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > stickyNavTop) {
+                $('.nav-color').addClass('sticky');
+            } else {
+                $('.nav-color').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+          stickyNav();
+        });
+      });
      </script>
-  </body>
+   </body>
 </html>
