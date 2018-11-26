@@ -68,7 +68,7 @@
           color: black;
           text-align: center;
           font-size: 12px;
-            }
+        }
 
 
       .btn{
@@ -80,7 +80,11 @@
           margin-left: auto;
           margin-right: auto;
           margin-top:30px;
-      }
+       }
+     
+      .btn:hover {
+           background-color: #cc493d !Important;
+         }
 
         .info1{
             width:200px;
@@ -137,6 +141,15 @@
           padding-top: 50px;
           font-weight: bold;
         }
+     
+       .input-field input[type=text] {
+          color: #a63b32 !important;
+        }
+
+        .input-field input[type=text]:focus {
+           border-bottom: 1px solid #a63b32 !important;
+           box-shadow: 0 1px 0 0 #a63b32 !important;
+         }
 
 
     </style>
@@ -154,9 +167,6 @@
          <img class="logo"src="images/lmta.png" alt="">
            <div class="biblioteka">
                <a class="juoda" href="index.html"><h3>BIBLIOTEKA</h3></a>
-             <!-- <div class="fb">
-               <a href="https://facebook.com/lmtabiblioteka" target="_blank"><img class="fb"src="images/dds.png" alt=""></a>
-             </div> -->
            </div>
          </div>
        </header>
@@ -194,7 +204,7 @@
        <div class="box-center">
          LMTA bendruomenės nariai gali pasiūlyti bibliotekai įsigyti mokslui ir studijoms reikalingus leidinius. Prieš pildydami užsakymo formą, LMTA bibliotekos  <a href="https://aleph.library.lt/F?func=find-b-0&local_base=lmt01opac" target="_blank">el. kataloge</a> patikrinkite, ar Jūsų siūlomo užsakyti leidinio nėra bibliotekoje.
        </div>
-       <div class="col s12 m12 l12">
+       <div class="input-field col s12 m12 l12">
        <div class="box-center">
          <form class="" action="index.php" method="post">
                <fieldset>
@@ -217,7 +227,7 @@
                        <td><input type="text" name="metai" value=""></td>
                      </tr>
                      <tr>
-                       <td>5. Egzemplorių skaičius:</td>
+                       <td>5. Egzempliorių skaičius:</td>
                        <td><input type="text" name="skaičius" value=""></td>
                      </tr>
                    </table>
