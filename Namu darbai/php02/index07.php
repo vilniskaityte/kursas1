@@ -14,7 +14,7 @@
       <ul>
         <?php
             for($i = 0; $i < count($cities4); $i++ ){
-              echo "<li>" $cities4" </li>";
+               echo "<li>$cities4[$i]</li>";
             }
         ?>
       </ul>
