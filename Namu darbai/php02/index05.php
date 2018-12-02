@@ -1,12 +1,12 @@
 <?php
   $cities3 = [
 
-    'tokijas' => [13.6, 1868, 'Japonija'],
-    'vasingtonas' => [0.6, 1790, 'JAV'],
-    'maskva' => [11.5, 1147, 'Rusija']
+    'Tokijas' => [13.6, 1868, 'Japonija'],
+    'Vasingtonas' => [0.6, 1790, 'JAV'],
+    'Maskva' => [11.5, 1147, 'Rusija']
 ];
 
-  $cities3['londonas'] = [8.6, 43, 'Anglija'];
+  $cities3['Londonas'] = [8.6, 43, 'Anglija'];
 
 ?>
 
@@ -18,9 +18,9 @@
   </head>
   <body>
     <ul>
-      <li> Gyventojų skaičius: <?php echo $cities3['londonas'] = 8.6;  ?></li>
-      <li> Įkurtas: <?php echo $cities3['londonas'] = 43 . 'm';  ?></li>
-      <li> Šalis: <?php echo $cities3['londonas'] = 'Anglija';  ?></li>
+      <li> Gyventojų skaičius: <?php echo $cities3['Londonas'][0] . ' ' . 'mln.';  ?></li>
+      <li> Įkurtas: <?php echo $cities3['Londonas'][1] . ' '. 'm';  ?></li>
+      <li> Šalis: <?php echo $cities3['Londonas'][2];  ?></li>
     </ul>
   </body>
 </html>
