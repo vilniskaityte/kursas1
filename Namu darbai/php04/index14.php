@@ -1,21 +1,10 @@
-&copy;
 <?php
-  echo date ('Y');
+    $startYear = 2015;
+    $currentYear = date('Y');
+
+    echo '&copy;'. ' ' . $startYear;
+
+    if ($startYear != $currentYear) {
+      echo '-' . $currentYear;
+    }
 ?>
-
-<br>
-
-<?php
-
- $date = 2015;
- $dabar = date('Y');
-
- 	if($date < $dabar) {
-   	  echo '&copy;' . ' '. $date . ' - '.  $dabar ;
- 	}
-
-  else {
- 		echo '&copy;' . ' ' . $dabar;
- 	}
-
- ?>
