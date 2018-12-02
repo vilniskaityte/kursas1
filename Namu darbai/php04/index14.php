@@ -2,9 +2,16 @@
     $startYear = 2015;
     $currentYear = date('Y');
 
-    echo '&copy;'. ' ' . $startYear;
-
-    if ($startYear != $currentYear) {
-      echo '-' . $currentYear;
+    if ($startYear < $currentYear) {
+      echo '&copy;' . ' ' . $startYear . '-' . $currentYear;
     }
+
+    elseif ($startYear >= $currentYear) {
+      echo '&copy;' . ' ' . $currentYear;
+    }
+
+    else {
+      echo '&copy;' . ' '. $currentYear;
+    }
+
 ?>
